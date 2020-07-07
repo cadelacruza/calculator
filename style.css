@@ -131,3 +131,10 @@ body {
   background-color: #00dc76 !important;
   color: #fbfefc;
 }
+
+@media (max-width: 400px) {
+  #container {
+    width: 370px;
+    height: 98%;
+  }
+}
