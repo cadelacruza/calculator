@@ -83,7 +83,7 @@ function handleOperator(nextOperator) {
 const performCalculation = {
   "/": (firstNum, secondOperand) => firstNum / secondOperand,
 
-  "*": (firstNum, secondOperand) => firstNum * secondOperand,
+  x: (firstNum, secondOperand) => firstNum * secondOperand,
 
   "+": (firstNum, secondOperand) => firstNum + secondOperand,
 
