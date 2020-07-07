@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#displayed,
+#input {
+  font-family: "Roboto", sans-serif;
+  text-align: end;
+  color: white;
+  font-size: 30px;
+}
+
+#displayed {
+  grid-area: displayed;
+}
+
+#input {
+  grid-area: input;
+}
+
+#clear {
+  grid-area: clear;
+}
+
+#division {
+  grid-area: division;
+}
+
+#multiplication {
+  grid-area: multiplication;
+}
+
+#addition {
+  grid-area: addition;
+}
+
+#substraction {
+  grid-area: substraction;
+}
+
+#siete {
+  grid-area: siete;
+}
+
+#ocho {
+  grid-area: ocho;
+}
+
+#nueve {
+  grid-area: nueve;
+}
+
+#equals {
+  grid-area: equals;
+}
+
+#zero {
+  grid-area: zero;
+}
+
+#decimal {
+  grid-area: decimal;
+}
+
+#container {
+  overflow: hidden;
+  width: 400px;
+  height: 90%;
+  background-color: #1d1e20;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 10px;
+  padding: 10px;
+
+  grid-template-areas:
+    "displayed displayed displayed displayed"
+    "input input input input"
+    "clear clear division multiplication"
+    "siete ocho nueve substraction"
+    "cuatro cinco seis addition"
+    "uno dos tres equals"
+    "zero zero decimal equals";
+}
+
+.operation {
+  background-color: #ff9a00;
+  color: #fedc98;
+  border: none;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.operation:hover,
+#equals:hover {
+  filter: brightness(90%);
+}
+.numbers:hover,
+#clear:hover {
+  filter: brightness(120%);
+}
+
+#clear,
+.numbers,
+#equals,
+#container {
+  border: none;
+  border-radius: 15px;
+}
+#clear {
+  background-color: #321c23;
+  color: #f60137;
+}
+
+.numbers {
+  background-color: #27282c;
+  color: #e2e2e2;
+}
+
+#equals {
+  background-color: #00dc76 !important;
+  color: #fbfefc;
+}
